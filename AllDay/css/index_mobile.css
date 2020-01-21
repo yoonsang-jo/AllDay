@@ -1,0 +1,6 @@
+@media all and (max-width:767px){
+.sns-wrap > a{height:50px; line-height:50px;}
+.sns-wrap a img{width:25px;}
+.sns-wrap > a{font-size:16px;}
+.sns-wrap span{font-size:16px;}
+}
