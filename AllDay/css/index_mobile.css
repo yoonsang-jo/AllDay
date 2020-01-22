@@ -1,6 +1,41 @@
 @media all and (max-width:767px){
+/* 로그인 */
 .sns-wrap > a{height:50px; line-height:50px;}
 .sns-wrap a img{width:25px;}
 .sns-wrap > a{font-size:16px;}
 .sns-wrap span{font-size:16px;}
+
+    
+/* 서브페이지 */
+.sub-wrap{width:90%; max-width:38.4rem; min-height:100%; margin:0 auto;  padding:0 5% 3rem 5%; position: relative;}
+
+.sub-wrap .back{display:inline-block; width:1rem; padding:.5rem; margin-left:-.5rem;}
+.sub-wrap .title{margin-top:.625rem; font-size:1.1rem; letter-spacing:-.0625rem; font-weight:normal; color:#000;}
+.sub-wrap h2{font-weight:normal; font-size:.7rem; color:#777; letter-spacing:-.0375rem;}
+
+.sub-wrap ul{margin:.7rem 0 0;}
+.sub-wrap ul li{width:100%; height:50px; line-height:50px; text-align:center; letter-spacing:-1.5px; border-radius:10px; font-family:'NotoSansCJKkr-DemiLight'; background:#ffdc00; font-size:16px;}
+.sub-wrap ul li a{color:#451200;}
+.sub-wrap ul li img{width:25px; margin:0 10px 0 0;}
+
+.sub-wrap .find-info a{display:block; color:#777; font-size:.7rem;}
+.sub-wrap .find-info a:last-child{margin:1rem 0 0;}
+
+a.btn{width:100%; height:3rem; line-height:3rem; text-align:center; background:#999; color:#fff; position:fixed; bottom:0; font-size:1rem;}
+
+.sub-wrap .stit_email{margin-top:2rem;}
+.sub-wrap .stit_pw{margin-top:1rem;}
+.sub-wrap .stit_sns{margin-top:2rem;}
+.sub-wrap .find-info{margin-top:2rem;}
+
+/* INPUT */
+.sub-wrap .input-outer{margin-top:.25rem; position:relative;}
+.input-outer input{height:1.5rem; font-size:.6rem;}
+input::-webkit-input-placeholder{font-size:.6rem;}
+/* CLEAR BTN */
+.input-outer .input-clear{width:.875rem; height:.875rem; background:#bbb; position:absolute; top:.325rem; right:0; border-radius:100%; font-size:0; display:none;}
+.input-outer .input-clear:before{display:block; content:""; width:.5rem; height:.05rem; background:#fff; transform:rotate(45deg); position:absolute; top:50%; left:20%;}
+.input-outer .input-clear:after{display:block; content:""; width:.5rem; height:.05rem; background:#fff; transform:rotate(-45deg); position:absolute; top:50%; left:20%;}
+/* //CLEAR BTN */
+/* //INPUT */
 }
