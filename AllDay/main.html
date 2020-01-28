@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/index_mobile.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/swiper.min.js"></script>
 </head>
 <body>
     <header>
@@ -24,8 +26,51 @@
                     호캉스의 완성<br>
                     올데이와 함께하세요
                 </h2>
-                <article class="visual">
-                    메인비주얼 삽입
+                <article class="visual" style="position:relative;">
+                    <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <h3>나의 예약정보</h3>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div><img src="img/thum_01.png" alt="썸네일"></div>
+                                <div>
+                                    <p>올데이 호텔</p>
+                                    <span>2019.09.01 ~ 09.17</span>
+                                    <a href="#none">예약정보 상세보기</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div><img src="img/thum_02.png" alt="썸네일"></div>
+                                <div>
+                                    <p>올데이 호텔</p>
+                                    <span>2019.09.01 ~ 09.17</span>
+                                    <a href="#none">예약정보 상세보기</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div><img src="img/thum_03.png" alt="썸네일"></div>
+                                <div>
+                                    <p>올데이 호텔</p>
+                                    <span>2019.09.01 ~ 09.17</span>
+                                    <a href="#none">예약정보 상세보기</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div><img src="img/thum_04.png" alt="썸네일"></div>
+                                <div>
+                                    <p>올데이 호텔</p>
+                                    <span>2019.09.01 ~ 09.17</span>
+                                    <a href="#none">예약정보 상세보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        
+                    </div>
                 </article>
                 <article class="quick">
                     <ul>

@@ -12,6 +12,7 @@
 .sub-wrap .back{display:inline-block; width:1rem; padding:.5rem; margin-left:-.5rem;}
 .sub-wrap .title{margin-top:.625rem; font-size:1.1rem; letter-spacing:-.0625rem; margin-top:.3rem; }
 .sub-wrap .tit-txt{font-size:.7rem; letter-spacing:-.0375rem;}
+.sub-wrap .tit-txt2{font-size:.65rem; margin-top:.5rem}
 
 .sub-wrap .user{margin-top:1.5rem;}
 .user .profile{width:4.5rem;}
@@ -23,10 +24,26 @@
 .certification{}
 .certification ul li{margin:0 0 0 1rem; padding:.3rem; font-size:.6rem;}
 
+.apply-way{margin:1rem 0 0;}
+.apply-way>div{padding:0 .325rem;}
+.apply-way>div img{width:3.25rem;}
+.apply-way>div:nth-child(2) img,
+.apply-way>div:nth-child(4) img{width:.7rem; margin:1.5rem 0 0;}
+.apply-way>div span{font-size:.6rem;}
+
 .last-txt{font-size:.5rem; margin:1rem 0 0;}
 
 .sub-wrap .find-info{margin-top:2rem;}
 .sub-wrap .find-info a{font-size:.7rem;}
+
+.checkbox{margin:1rem 0 0;}
+.checkbox input{width:.75rem; height:.75rem;}
+.checkbox input:before{width:.475rem; height:.325rem;}
+.checkbox input:checked:before{width:.475rem; height:0.325rem;}
+.checkbox label{padding:0 0 0 .3rem; font-size:.65rem}
+    
+.process-box img{width:6.5rem;}
+.process-box p{font-size:1rem; margin:1.5rem 0 0;}
 
 a.btn{height:3rem; line-height:3rem; font-size:1rem;}
 

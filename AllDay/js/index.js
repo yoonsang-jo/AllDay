@@ -48,7 +48,35 @@ $(function () {
     /* //뒤로가기 */
     
     
-    /* 팝업 */
+    /* 체크박스 */
+    $("input[type='checkbox']").click(function(){
+        if($("input[type='checkbox']").is(":checked") == true) {
+//            alert("aa");
+            $(".btn").addClass("on");
+        }else{
+//            alert("bb");
+            $(".btn").removeClass("on");
+        }
+    });
+    /* //체크박스 */
     
-    /* //팝업 */
+    
+    /* 비주얼 (스와이프) */
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    /* //비주얼 (스와이프) */
 });
