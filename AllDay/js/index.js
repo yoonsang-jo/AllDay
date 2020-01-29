@@ -62,11 +62,17 @@ $(function () {
     
     
     /* 비주얼 (스와이프) */
-    var swiper = new Swiper('.swiper-container', {
+    var swiper1 = new Swiper('.swiper-container', {
+      slidesPerView: 1,
       spaceBetween: 30,
-      centeredSlides: true,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
       autoplay: {
-        delay: 2500,
+        delay: 3000,
+        loop: true,
         disableOnInteraction: false,
       },
       pagination: {
@@ -79,4 +85,10 @@ $(function () {
       },
     });
     /* //비주얼 (스와이프) */
+    
+    var swiper2 = new Swiper('.swiper-container2', {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      loop: true,
+    });
 });

@@ -16,7 +16,7 @@ body{width:100%; height:100%; font-size:1rem;}
 
 
 /* 서브페이지 */
-.sub-wrap{width:94%; max-width:38.4rem; min-height:100%; margin:0 auto;  padding:0 3%; position: relative;}
+.sub-wrap{width:92%; max-width:38.4rem; min-height:100%; margin:0 auto;  padding:0 4%; position: relative;}
 
 .sub-wrap .back{display:inline-block; padding:1rem 0 0;}
 .sub-wrap .title{margin-top:2.25rem; font-size:2.2rem; letter-spacing:-.125rem; font-weight:normal; color:#000;}
@@ -98,13 +98,13 @@ a.btn.on{background:#4366d4}
 /* 메인페이지 */
 .header-inner,
 .main-inner,
-.contents{width:94%; max-width:38.4rem; min-height:100%; margin:0 auto;  padding:0 3%; position: relative;}
+.contents{width:92%; max-width:38.4rem; min-height:100%; margin:0 auto;  padding:0 4%; position: relative;}
 
 header{width:100%; height:100px; background:#eee;}
 header:after{content:""; clear:both; display:block;}
 header h1{float:left; width:9rem; margin:1rem 0 0;}
 header h1 img{width:100%; display:block;}
-header .nav-ham{float:right; padding:1rem; margin:.6rem 0 0;}
+header .nav-ham{float:right; padding:1rem; margin:.6rem 0 0; position:relative; left:1rem;}
 header .nav-ham img{display:block;}
 
 main{background:#eee; padding:1.25rem 0 0;}
@@ -112,7 +112,7 @@ main{background:#eee; padding:1.25rem 0 0;}
 
 .main-inner{padding:0 3% 6.725rem 3%;}
 .main-sec{width:100%}
-.main-sec .quick{}
+.main-sec .quick{margin:1rem 0 0;}
 .main-sec .quick ul{width:100%;}
 .main-sec .quick ul:after{content:""; clear:both; display:block;}
 .main-sec .quick ul li{float:left; width:30%; padding:0 1.6%; text-align:center; margin:2rem 0 0;}
@@ -131,8 +131,6 @@ box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1);
 .contents h2 a.blue{color:#4366d4;}
 .contents .article-txt{font-size:1.4rem; color:#777; margin:1.5rem 0 0;}
 
-.contents .slide{width:100%; height:350px; line-height:350px; text-align:center; background:#eee; margin:2rem 0 0;}
-
 .contents .tip-img{ margin:2rem 0 0;}
 .contents .tip-img img{width:100%;}
 /* //메인페이지 */
@@ -140,26 +138,14 @@ box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1);
 
 /* 비주얼 (스와이프) */
 /* MAIN-VISUAL */
-.visual{width:94%; padding:3%; margin:2rem 0 0; background:#fff; border-radius:10px;}
+.visual{width:86%; padding:7%; padding-top:3%; margin:2rem 0 0; background:#fff; border-radius:10px;}
 /* //MAIN-VISUAL */
 
-.swiper-wrapper{
-padding:0 0 5%;
-}
 
-.swiper-container {
-width: 100%;
-height: 100%;
-}
-.swiper-container h3{
-font-size:1.75rem;
-font-weight:normal;
-color:#000;
-}
-.swiper-slide {
-text-align: center;
-font-size: 18px;
-background: #fff;
+.swiper-container{width:100%; height:100%;}
+.swiper-container h3{font-size:1.75rem; font-weight:normal; color:#000;}
+.swiper-wrapper{padding:0 0 5%;}
+.swiper-slide{text-align: center; font-size: .9rem; background: #fff;
 
 /* Center slide text vertically */
 display: -webkit-box;
@@ -176,31 +162,46 @@ justify-content: center;
 align-items: center;
 }
 
+.swiper-slide>div{display:block; width:100%; margin:1.5rem 0 0;}
+.swiper-slide div div{float:left;}
+.swiper-slide div div:first-child{margin:0 2rem 0 0;}
+.swiper-slide div div:first-child img{width:100%;}
+.swiper-slide div div:last-child{text-align:left;}
+.swiper-slide div div:last-child p{font-size:1.5rem; margin:.2rem 0 0; color:#000; font-weight:500;}
+.swiper-slide div div:last-child span{display:block; font-size:1.35rem; color:#999;}
+.swiper-slide div div:last-child a{display:inline-block; font-size:1.25rem; color:#4366d4; text-decoration:underline; margin:1.75rem 0 0;}
 
-.swiper-button-next,.swiper-button-prev{position:absolute;top:50%;width:3rem;height:3rem;background:#bbb;opacity:.9;border-radius:100%;margin-top:calc(-1 * var(--swiper-navigation-size)/ 2);z-index:10;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--swiper-navigation-color,var(--swiper-theme-color))}
-.swiper-button-next{right:-20px;}
-.swiper-button-prev{left:-20px !important;}
+
+.swiper-button-next,.swiper-button-prev{position:absolute; top:50%; width:3rem; height:3rem; background:#bbb; opacity:.9; border-radius:100%; margin-top:calc(-1 * var(--swiper-navigation-size)/ 2); z-index:10; cursor:pointer; display:flex; align-items:center; justify-content:center; color:var(--swiper-navigation-color,var(--swiper-theme-color));}
+.swiper-button-prev:after,
+.swiper-button-next:after{font-size:1rem !important; color:#fff;}
+.swiper-button-next{right:-1.25rem;}
+.swiper-button-prev{left:-1.25rem !important;}
 
 
-.swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{
-bottom:0;
-left:0;
-width:100%
-}
-.swiper-pagination-bullet{
-width:1rem;
-height:1rem;
-display:inline-block;
-border-radius:100%;
-background:#000;
-opacity:.2
-}
-.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 .4rem}
-.swiper-pagination-bullet-active{
-opacity:1;
-background:#4366d4;
-}
+.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{bottom:1rem; left:0; width:100%;}
+.swiper-pagination-bullet{width:1rem; height:1rem; display:inline-block; border-radius:100%; background:#000; opacity:.2;}
+.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 .4rem;}
+.swiper-pagination-bullet-active{opacity:1; background:#4366d4;}
 /* //비주얼 (스와이프) */
 
+
+/* 슬라이드 (스와이프) */
+.contents .slide{width:100%; text-align:center; margin:2rem 0 0;}
+.swiper-container2{width: 100%; height: 100%; margin-left:auto; margin-right:auto; position:relative; overflow:hidden; z-index:1;}
+.swiper-wrapper2{position:relative; width:100%; height:100%; z-index:1; display:flex; transition-property:transform; box-sizing:content-box; padding:2.5rem 0;}
+.swiper-slide2{display:block; width:40% !important; height:100%; position:relative; transition-property:transform; text-align:center; font-size: 18px; background:transparent;
+-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+.swiper-slide2:nth-child(2n){width:40%;}
+.swiper-slide2:nth-child(3n){width:40%;}
+
+.swiper-slide2 div{display:block; width:90%; padding:10% 5%; border-radius:10px 10px 0 0; background:#fff; margin:0;}
+.swiper-slide2 div img{}
+.swiper-slide2 div p{font-size:1.4rem; color:#333; margin:1rem 0 0; line-height: 1.3;}
+.swiper-slide2 a{display:block; width:100%; height:3.25rem; line-height:3.25rem; font-size:1.4rem; color:#fff; border-radius:0 0 10px 10px; background:#4366d4;}
+/* //슬라이드 (스와이프) */
 
 
