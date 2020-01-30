@@ -1,93 +1,141 @@
-@media all and (max-width:767px){
+html{width:100%; height:100%; font-size:24px;}
+body{width:100%; height:100%; font-size:1rem;}
+
+input[type=tel],
+input[type=time],
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=email],
+input[type=file],
+input[type=url],
+input[type=number],
+input[type=date],textarea {font-size:.7rem;}
+input::-webkit-input-placeholder{font-size:.7rem;}
+
+input[type=tel][readonly],
+input[type=text][readonly],
+input[type=password][readonly],
+input[type=email][readonly], 
+input[type=search][readonly], 
+input[type=tel][disabled],
+input[type=text][disabled],
+input[type=password][disabled],
+input[type=search][disabled],
+input[type=email][disabled]{font-size:.7rem;}
+
+.pb{padding:0 0 1.5rem;}
+
 /* 로그인 */
-.sns-wrap > a{height:50px; line-height:50px;}
-.sns-wrap a img{width:25px;}
-.sns-wrap > a{font-size:15px;}
-.sns-wrap span{font-size:15px;}
+.login-wrap h1{width:7.625rem; padding:5.125rem 0 5.5rem;}
 
-    
+.sns-wrap{width:13.25rem; font-size:.75rem;}
+.sns-wrap > a{height:2.25rem; line-height:2.25rem; border-radius:.125rem;}
+.sns-wrap a img{width:1rem; margin:0 .5rem 0 0;}
+.sns-email{margin:.5rem 0 0;}
+.sns-wrap span{margin:1.25rem 0 0; padding:0 0 4.3rem;}
+.sns-wrap span a{margin:0 0 0 .5rem;}
+
+
 /* 서브페이지 */
-.sub-wrap{width:90%; min-height:100%; position: relative;}
+.sub-wrap{padding:0 1rem;}
 
-.sub-wrap .back{display:inline-block; width:1rem; padding:.5rem; margin-left:-.5rem;}
-.sub-wrap .title{margin-top:.625rem; font-size:1.1rem; letter-spacing:-.0625rem; margin-top:.3rem; }
-.sub-wrap .tit-txt{font-size:.7rem; letter-spacing:-.0375rem;}
-.sub-wrap .tit-txt2{font-size:.65rem; margin-top:.5rem}
+.sub-wrap .back{width:1rem; padding:.5rem; margin:0 0 0 -.5rem;}
+.sub-wrap .title{margin-top:.625rem; font-size:1.25rem; letter-spacing:-.0625rem;}
+.sub-wrap .tit-txt{font-size:.75rem; margin-top:.75rem; line-height:1.125rem;}
+.sub-wrap .tit-txt2{margin-top:.4rem; line-height:1rem;}
+.sub-wrap .tit-txt3{font-size:.7rem; margin:.6rem 0 0; line-height:1.125rem;}
 
-.sub-wrap .user{margin-top:1.5rem;}
-.user .profile{width:4.5rem;}
-.user .camera{width:1.6rem; position:absolute; right:-0.3rem; bottom:0;}
+.sub-wrap .user{margin-top:1.25rem;}
+.user .profile{width:4.6rem;}
+.user .camera{width:1.625rem; right:-0.25rem; bottom:0;}
 
-.sub-wrap .stit{font-size:.7rem; letter-spacing:-.0375rem; margin-top:1rem;}
-.sub-wrap .stit-f{margin-top:2rem;}
+.sub-wrap .stit{font-size:.75rem; margin-top:1.125rem;}
+.sub-wrap .stit2{font-size:.875rem; letter-spacing:.0437rem;}
+.sub-wrap .stit3{margin:1.875rem 0 0;}
+.sub-wrap .stit-f{margin-top:2.1rem;}
+.sub-wrap .stit-f2{margin-top:1.5rem;}
 
-.certification{}
-.certification ul li{margin:0 0 0 1rem; padding:.3rem; font-size:.6rem;}
+.certification ul li{margin:0 0 0 1rem; padding:.15rem; font-size:.75rem;}
 
-.apply-way{margin:1rem 0 0;}
-.apply-way>div{padding:0 .325rem;}
+.apply-way{margin:1.25rem 0 0;}
+.apply-way>div{padding:0 .3rem;}
 .apply-way>div img{width:3.25rem;}
 .apply-way>div:nth-child(2) img,
-.apply-way>div:nth-child(4) img{width:.7rem; margin:1.5rem 0 0;}
-.apply-way>div span{font-size:.6rem;}
+.apply-way>div:nth-child(4) img{width:.75rem; margin:1.5rem 0 0;}
+.apply-way>div span{font-size:.625rem; margin:.5rem 0 0;}
 
-.last-txt{font-size:.5rem; margin:1rem 0 0;}
+.last-txt{font-size:.7rem; margin:1.175rem 0 0; letter-spacing:-.035; line-height:1.125rem;}
 
-.sub-wrap .find-info{margin-top:2rem;}
-.sub-wrap .find-info a{font-size:.7rem;}
+.sub-wrap .find-info{margin-top:2.1rem;}
+.sub-wrap .find-info a{font-size:.75rem;}
 
-.checkbox{margin:1rem 0 0;}
+.checkbox{margin:1.5rem 0 0;}
 .checkbox input{width:.75rem; height:.75rem;}
 .checkbox input:before{width:.475rem; height:.325rem;}
-.checkbox input:checked:before{width:.475rem; height:0.325rem;}
-.checkbox label{padding:0 0 0 .3rem; font-size:.65rem}
-    
+.checkbox input:checked:before{display:block; content:""; width:.475rem; height:.325rem;}
+.checkbox label{padding:0 0 0 .3rem; font-size:.7rem; letter-spacing:-.035rem;}
+
+.process-box{margin:6.8rem 0 0;}
 .process-box img{width:6.5rem;}
-.process-box p{font-size:1rem; margin:1.5rem 0 0;}
+.process-box p{font-size:1rem; margin:1.625rem 0 0; line-height:1.5rem; letter-spacing:.05rem;}
 
-a.btn{height:3rem; line-height:3rem; font-size:1rem;}
-
+a.btn{height:2.5rem; line-height:2.5rem; font-size:1rem;}
 
 /* INPUT */
 .sub-wrap .input-outer{margin-top:.25rem;}
-.input-outer input{height:1.5rem; font-size:.6rem;}
-input::-webkit-input-placeholder{font-size:.6rem;}
+.input-outer input{height:1.5rem;}
 /* CLEAR BTN */
-.input-outer .input-clear{width:.875rem; height:.875rem; top:.325rem;}
-.input-outer .input-clear:before{width:.5rem;}
-.input-outer .input-clear:after{width:.5rem;}
+.input-outer .input-clear{width:.875rem; height:.875rem;top:.325rem; }
+.input-outer .input-clear:before{width:.5rem; height:.025rem;}
+.input-outer .input-clear:after{width:.5rem; height:.025rem;}
 /* //CLEAR BTN */
 /* //INPUT */
+
+
+/* POPUP */
+.popup{width:12.5rem; border-radius:.25rem;}
+.popup p{font-size:1.125rem; padding: 1.25rem 0 0;}
+.popup span{font-size:.7rem; padding:1.825rem;}
+
+.popup ul li{font-size:.875rem; padding:.9rem 0;}
+/* //POPUP */
 
 
 /* 메인페이지 */
 .header-inner,
 .main-inner,
-.contents{width:90%;}
+.contents{padding:0 1rem;}
 
-header{height:50px;}
-header h1{width:4.5rem; margin:.5rem 0 0;}
+header{height:2.5rem;}
+header h1{width:5rem; margin:.35rem 0 0;}
 header .nav-ham{padding:.5rem; margin:.3rem 0 0; left:.5rem;}
-header .nav-ham img{width:1rem;}
 
-main{padding:0.625rem 0 0;}
-.main-sec h2{font-size:1.1rem;}
+main{padding:.625rem 0 3.35rem;}
+.main-sec h2{font-size:1.125rem; letter-spacing: -0.0562rem; line-height:1.5rem;}
 
-.main-inner{padding:0 3% 3.5rem 3%;}
-.main-sec .quick ul li{margin:1rem 0 0;}
-.main-sec .quick ul li a{width:3.25rem; height:3.25rem; line-height: 3.25rem;}
+.main-inner{padding:0 1rem;}
+.main-sec .quick{margin:.8rem 0 0;}
+.main-sec .quick ul li{width:3.25rem; padding:0 .6rem; margin:.825rem auto 0;}
+.main-sec .quick ul li a{width:3.3335rem; height:3.3335rem; line-height:3.3335rem;}
 .main-sec .quick ul li a{
 -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1);
 -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1);
 box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1);
 }
 .main-sec .quick ul li a img{width:1.5rem;}
-.main-sec .quick ul li span{font-size:.7rem; margin:0.3rem 0 0;}
+.main-sec .quick ul li span{font-size:.75rem; margin:.5rem 0 0;}
 
-.contents .event-banner{margin:-1.6rem 0 0;}
-.contents h2{margin:2rem 0 0;}
+.event-banner{max-width:32rem; padding:0 1rem; margin:-1.725rem auto 0;}
+
+.main-sec2{}
+.main-sec2 h2{margin:1.9rem auto 0; padding:0 1rem;}
+.main-sec2 h2 a{font-size:.7rem; right:1rem; bottom:0;}
+.main-sec2 .article-txt{max-width:32rem; font-size:.75rem; margin:.7rem auto 0; line-height:1.125rem; padding:0 1rem;}
+
+.contents h2{margin:2.125rem 0 0;}
 .contents h2 a{font-size:.7rem;}
-.contents .article-txt{font-size:.7rem; margin:.75rem 0 0;}
+.contents .article-txt{font-size:.7rem; margin:.7rem 0 0;}
 
 .contents .tip-img{ margin:1rem 0 0;}
 /* //메인페이지 */
@@ -95,47 +143,68 @@ box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1);
 
 /* 비주얼 (스와이프) */
 /* MAIN-VISUAL */
-.visual{margin:1rem 0 0; padding-top:3%}
+.visual{padding:1.125rem 1.25rem 1.5rem; padding-top:1.125rem; margin:1rem 0 0; border-radius:.25rem;
+}
 /* //MAIN-VISUAL */
 
 
-.swiper-container h3{font-size:.875rem;}
-.swiper-slide{font-size: .45rem;}
+.swiper-container h3{font-size:.875rem; line-height:-.0437rem;}
+.swiper-wrapper{padding:0 0 .75rem;}
+.swiper-slide{font-size: .45rem; background: #fff;
 
-.swiper-slide>div{margin:0.75rem 0 0;}
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+
+.swiper-slide>div{margin:.75rem 0 0;}
 .swiper-slide div div:first-child{width:4.25rem; margin:0 1rem 0 0;}
-.swiper-slide div div:last-child p{font-size:0.75rem; margin:.2rem 0 0;}
-.swiper-slide div div:last-child span{font-size:.675rem;}
-.swiper-slide div div:last-child a{font-size:.625rem; margin:.875rem 0 0;}
+.swiper-slide div div:last-child p{font-size:.75rem; margin:.25rem 0 0; letter-spacing:-.0375rem;}
+.swiper-slide div div:last-child span{font-size:.675rem; margin:.15rem 0 0;}
+.swiper-slide div div:last-child a{font-size:.625rem; margin:.5rem 0 0; letter-spacing:-.0312rem;}
 
 
-.swiper-button-next,.swiper-button-prev{width:1.5rem; height:1.5rem; top:55%;}
+.swiper-button-next,.swiper-button-prev{width:1.5rem; height:1.5rem;}
 .swiper-button-prev:after,
-.swiper-button-next:after{font-size:.5rem !important;}
+.swiper-button-next:after{font-size:.5rem !important; color:#fff;}
 .swiper-button-next{right:-.625rem;}
 .swiper-button-prev{left:-.625rem !important;}
 
 
-.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{bottom:.25rem;}
+.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{bottom:.75rem; left:0;}
 .swiper-pagination-bullet{width:.5rem; height:.5rem;}
-.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 .2rem;}
+.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 .3rem;}
 /* //비주얼 (스와이프) */
 
 
 /* 슬라이드 (스와이프) */
-.contents .slide{margin:1rem 0 0;}
-.swiper-wrapper2{padding:.5rem 0;}
-.swiper-slide2{display:block; width:32% !important;}
-.swiper-slide2:nth-child(2n){width:32%;}
-.swiper-slide2:nth-child(3n){width:32%;}
-.swiper-slide2 div{border-radius:5px 5px 0 0;}
+.slide{max-width:36.4rem; padding:0 0 0 1rem; margin:1rem 0 0;}
+.swiper-wrapper2{padding:1rem 0 0;}
+.swiper-slide2{display:block; width:6.25rem !important; font-size: .45rem; margin:0 .75rem 0 0;}
+.swiper-slide2:nth-child(2n){width:6.25rem;}
+.swiper-slide2:nth-child(3n){width:6.25rem;}
+
+.swiper-slide2 div{display:block; width:90%; padding:.625rem .3125rem; border-radius:.25rem .25rem 0 0;}
 .swiper-slide2 div img{width:3rem;}
-.swiper-slide2 div p{font-size:.7rem; margin:.5rem 0 0;}
-.swiper-slide2 a{height:1.625rem; line-height:1.625rem; font-size:.7rem; border-radius:0 0 5px 5px;}
+.swiper-slide2 div p{font-size:.7rem; margin:.5rem 0 0; line-height: .85rem;}
+.swiper-slide2 a{height:1.625rem; line-height:1.625rem; font-size:.75rem; border-radius:0 0 .25rem .25rem;}
 /* //슬라이드 (스와이프) */
+
+
+@media all and (max-width:374px){
+html{font-size:20px;}
+body{font-size:1rem;}
 }
-
-
 
 
 

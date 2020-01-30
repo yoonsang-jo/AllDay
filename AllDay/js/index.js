@@ -88,7 +88,6 @@ $(function () {
     
     var swiper2 = new Swiper('.swiper-container2', {
       slidesPerView: 'auto',
-      spaceBetween: 30,
       loop: true,
     });
 });
