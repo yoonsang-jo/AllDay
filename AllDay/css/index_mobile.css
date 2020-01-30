@@ -110,6 +110,7 @@ a.btn{height:2.5rem; line-height:2.5rem; font-size:1rem;}
 header{height:2.5rem;}
 header h1{width:5rem; margin:.35rem 0 0;}
 header .nav-ham{padding:.5rem; margin:.3rem 0 0; left:.5rem;}
+header .nav-ham img{width:1rem;}
 
 main{padding:.625rem 0 3.35rem;}
 .main-sec h2{font-size:1.125rem; letter-spacing: -0.0562rem; line-height:1.5rem;}

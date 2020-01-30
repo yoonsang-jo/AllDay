@@ -108,7 +108,7 @@ header:after{content:""; clear:both; display:block;}
 header h1{float:left; width:10rem; margin:.7rem 0 0;}
 header h1 img{width:100%; display:block;}
 header .nav-ham{float:right; padding:1rem; margin:.6rem 0 0; position:relative; left:1rem;}
-header .nav-ham img{display:block;}
+header .nav-ham img{display:block; width:2rem;}
 
 main{background:#eee; padding:1.25rem 0 6.7rem;}
 .main-sec h2{font-size:2.25rem; color:#000; font-weight:normal; letter-spacing: -0.1125rem; line-height:3rem;}
