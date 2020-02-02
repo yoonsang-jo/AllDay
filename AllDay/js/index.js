@@ -49,8 +49,8 @@ $(function () {
     
     
     /* 체크박스 */
-    $("input[type='checkbox']").click(function(){
-        if($("input[type='checkbox']").is(":checked") == true) {
+    $("input.confirm").click(function(){
+        if($("input.confirm").is(":checked") == true) {
 //            alert("aa");
             $(".btn").addClass("on");
         }else{
@@ -84,10 +84,51 @@ $(function () {
         prevEl: '.swiper-button-prev',
       },
     });
-    /* //비주얼 (스와이프) */
+    
     
     var swiper2 = new Swiper('.swiper-container2', {
       slidesPerView: 'auto',
       loop: true,
     });
+    
+    
+    var swiper3 = new Swiper('.swiper-container3', {
+      slidesPerView: 'auto',
+      loop: true,
+    });
+    /* //비주얼 (스와이프) */
+    
+    
+    /* 탑메뉴 */
+    $(".nav-ham").click(function(){
+        //alert("aa");
+        $("html, body").addClass("not-scroll");
+        $(".black_bg").fadeIn();
+        $(".top-menu").animate({
+            right : 0
+        });
+    });
+    
+    $(".top-close").click(function () {
+        $("html, body").removeClass("not-scroll");
+        $(".black_bg").fadeOut();
+        if ($(window).width() > 767) {
+            $(".top-menu").animate({
+                right: -25 + "rem"
+            });
+        } else {
+            $(".top-menu").animate({
+                right: -12.5 + "rem"
+            });
+        }
+    });
+    /* //탑메뉴 */
+    
+    /* 빠른문의(상세) */
+    $(".quick-detail-list li").click(function(){
+        $(".quick-detail-list li").removeClass("blue-line");
+        $(".quick-detail-list li > span").not($(this).children("span")).css('display','none');
+        $(this).addClass("blue-line").children("span").css('display','block');
+    });
+    /* //빠른문의(상세) */
 });
