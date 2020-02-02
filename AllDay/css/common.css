@@ -22,7 +22,7 @@ a{color:#000;text-decoration:none;}
  
 /* Form */
 textarea { border:1px solid #dbdbdb;}
-select {width:100%; font-size:1.6rem; color:#555; border:none; _border-radius: 5px; padding:0 2rem 0 0; background:url(../img/select_arrow.png) no-repeat 95% 50%;
+select {width:100%; font-size:1.6rem; color:#555; border:none; _border-radius: 5px; padding:0 2rem 0 0; background:url(../img/select_arrow.png) no-repeat 95% 50%; letter-spacing:-.08rem;
 -webkit-appearance:none;
 -moz-appearance:none;
 appearance:none;

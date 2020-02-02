@@ -1,7 +1,11 @@
 html{width:100%; height:100%; font-size:24px;}
 body{width:100%; height:100%; font-size:1rem;}
 
-select { height:32px; font-size:13px; color:#373737; border:none; background:#fff;_border-radius: 5px;}
+select {width:100%; font-size:.8rem; color:#555; border:none; _border-radius: 5px; padding:0 1rem 0 0; background:url(../img/select_arrow.png) no-repeat 100% 50%; letter-spacing:-.04rem;
+-webkit-appearance:none;
+-moz-appearance:none;
+appearance:none;
+}
 
 input[type=tel],
 input[type=time],
@@ -54,6 +58,9 @@ input[type=email][disabled]{font-size:.7rem;}
 .tit-txt2{margin-top:.4rem; line-height:1rem;}
 .tit-txt3{font-size:.7rem; margin:.6rem 0 0; line-height:1.125rem;}
 .tit-txt5{margin:.6rem 0 0;}
+.tit-txt6{margin:.6rem 0 0; font-size:.7rem; line-height:1rem;}
+.tit-txt7{font-size:.7rem; margin:.75rem 0 0; line-height:1.125rem; letter-spacing:-.035rem;}
+.tit-txt8{font-size:.75rem;}
 
 .sub-wrap .user{margin-top:1.25rem;}
 .user .profile{width:4.6rem;}
@@ -64,9 +71,17 @@ input[type=email][disabled]{font-size:.7rem;}
 .stit2{font-size:.875rem; letter-spacing:.0437rem;}
 .stit3{margin:1.875rem 0 0;}
 .stit4{font-size:1rem; letter-spacing:-.05rem;}
+.stit5{font-size:.8rem; letter-spacing:-.04rem; margin:1.25rem 0 0; padding:0 0 .625rem 0;}
+.stit5 span{font-size:.75rem;}
+.stit6{font-size:.9rem; letter-spacing:-.045rem; margin:2rem auto 0;}
+.stit7{font-size:1rem; letter-spacing:-.05rem}
 .stit-f{margin-top:2.1rem;}
-.stit-f2{margin-top:1.5rem;}
+.stit-f2{margin-top:1.5rem !important;}
 .stit-f3{margin-top:1.25rem;}
+.stit-f4{margin-top:2.5rem;}
+.stit-f5{margin-top:1.75rem;}
+.stit-f5 span{font-size:.7rem;}
+.stit-f6{margin-top:.75rem !important;}
 .stit-fnone{margin-top:0;}
 
 .certification ul li{margin:0 0 0 1rem; padding:.15rem; font-size:.75rem;}
@@ -83,6 +98,16 @@ input[type=email][disabled]{font-size:.7rem;}
 .facility li div{width:1.2rem; margin:0 .6rem 0 0;}
 .facility li p{font-size:.75rem;}
 .facility li p span{font-size:.7rem; letter-spacing:-.035rem; margin:.5rem 0 0;}
+
+.facility-list{margin:1.05rem 0 0;}
+.facility-list li{margin:1rem 0 0;}
+.facility-list li div,
+.facility-list li p{float:left; width:calc(100% - 1.9rem); font-size:.85rem;}
+.facility-list li div{width:1.25rem; margin:0 .65rem 0 0;}
+.facility-list li p span{font-size:.7rem; letter-spacing:-.035rem; margin:.1rem 0 0;}
+.facility-list li p span:nth-child(2n-1){width:45%;}
+.facility-list li p span:nth-child(2n){width:48%; padding:0 7% 0 0;}
+.facility-list li p .mt-1{margin:.4rem 0 0;}
 
 .detail-txt li{font-size:.7rem;}
 .detail-txt li:nth-child(2n-1){width:2.5rem; margin:.625rem 2.125rem 0 0;}
@@ -103,13 +128,26 @@ input[type=email][disabled]{font-size:.7rem;}
 .quick-detail-list li>span{margin:1rem 0 0; padding:1rem 0 0; font-size:.7rem;  line-height:1rem; letter-spacing:-.035rem;}
 
 .around-tab{margin:1.25rem 0 0;}
-.around-tab ul{max-width:16rem; padding:0 1rem;}
+.around-tab ul{max-width:17rem; padding:0 1rem;}
 .around-tab ul li{padding:.5rem 0; font-size:.8rem; letter-spacing:-.04rem;}
 
+.pick{font-size:.75rem; padding:.625rem 0;}
+.pick span{padding:0 .25rem;}
+
 .around-info{margin:1rem 0 0;}
-.around-info div.around-img{width:7.5rem; border-radius:.25rem; margin:0 1rem 0 0;}
+.around-info div.around-img{width:7.5rem; border-radius:.25rem; margin:0 .8rem 0 0;}
 .around-info div.around-txt p{font-size:.8rem; letter-spacing:-.04rem; margin:.5rem 0 0;}
-.around-info div.around-txt span{font-size:.65rem; line-height:1rem; letter-spacing:-.0325; margin:.25rem 0 0;}
+.around-info div.around-txt span{font-size:.65rem; line-height:1rem; letter-spacing:-.0325;}
+
+.appointment-info .around-txt{width:calc(100% - 8.5rem);}
+.appointment-info .around-txt .status span{width:2.65rem; height:1rem; border-radius:.075rem; padding:.25rem;}
+.appointment-info .around-txt .status span:first-child{margin:0 .25rem 0 0;}
+.appointment-info .around-txt .status p{font-size:.6rem; margin:.5rem 0 0;}
+.appointment-info .around-txt>span{font-size:.6rem !important;}
+.appointment-info .around-price-txt{margin:.25rem 0 0 !important;}
+
+.attachment{margin:.75rem 0 0;}
+.attachment li:last-child{font-size:.6rem;}
 
 .last-txt{font-size:.7rem; margin:1.175rem 0 0; letter-spacing:-.035; line-height:1.125rem;}
 .last-txt2{font-size:.75rem; margin:1rem 0 0;}
@@ -119,9 +157,11 @@ input[type=email][disabled]{font-size:.7rem;}
 .sub-wrap .find-info a{font-size:.75rem;}
 
 .checkbox{margin:1.5rem 0 0;}
-.checkbox input{width:.75rem; height:.75rem;}
-.checkbox input:before{width:.475rem; height:.325rem;}
-.checkbox input:checked:before{display:block; content:""; width:.475rem; height:.325rem;}
+.checkbox2{margin:.75rem 0 0;}
+.checkbox2 input[type="text"]{width:calc(100% - 4rem); float:right; padding:.2rem 0; font-size:.6rem;}
+.checkbox input[type="checkbox"]{width:.75rem; height:.75rem;}
+.checkbox input[type="checkbox"]:before{width:.475rem; height:.325rem;}
+.checkbox input[type="checkbox"]:checked:before{display:block; content:""; width:.475rem; height:.325rem;}
 .checkbox label{padding:0 0 0 .3rem; font-size:.7rem; letter-spacing:-.035rem;}
 
 .process-box{margin:6.8rem 0 0;}
@@ -131,6 +171,54 @@ input[type=email][disabled]{font-size:.7rem;}
 a.btn{height:2.5rem; line-height:2.5rem; font-size:1rem;}
 a.btn2{padding:0 1rem; height:2.75rem; line-height:2.75rem; font-size:.7rem; border-radius:.175rem; margin:1.5rem 0;}
 a.btn2:after{width:.275rem; height:.525rem; background:url(../img/ico_btn_arrow.png) no-repeat center / 100% auto; right:1rem;}
+
+.reservation-btn>div{border-radius:.175rem; height:2.5rem;}
+.reservation-btn>div:first-child{width:80%;}
+.reservation-btn>div a{height:2.5rem; line-height:2.5rem; font-size:1rem; letter-spacing:-.05rem; border-radius:.175rem;}
+.reservation-btn>div:last-child{width:2.5rem; line-height:2.25rem;}
+.reservation-btn>div img{width:1.25rem;}
+
+.reservation-btn2>div a{height:2.5rem; line-height:2.5rem; font-size:1rem; letter-spacing:-.05rem; border-radius:.175rem;}
+
+.gray-bar{width:100%; height:1rem; background:#eee; font-size:0;}
+
+.map{width:100%; margin:.75rem 0 0; border-radius:.25rem;}
+.map img{width:100%;}
+
+.check-in-out-time ul{margin:.65rem 0 0;}
+.check-in-out-time ul li{width:49%; padding:.75rem; border-radius:.25rem;}
+.check-in-out-time ul li:first-child{margin:0 2% 0 0;}
+.check-in-out-time ul li p{font-size:.75rem;}
+.check-in-out-time ul li span{font-size:.7rem; letter-spacing:-.035rem;}
+
+.facilities-list li{width:25%; margin:1rem 0 0;}
+.facilities-list li div{width:1.75rem; height:1.75rem;}
+.facilities-list li p{font-size:.6rem; letter-spacing:-.03rem; margin:.5rem 0 0;}
+
+.review-top{margin:1rem 0 0;}
+.review .review-tit{font-size:.8rem; letter-spacing:-.04rem;}
+.review>span{margin:.25rem 0 0; font-size:.7rem; letter-spacing:.035rem;}
+.review>span>span{font-size:.7rem;}
+.review>span>span:before{display:inline-block; content:""; width:2px; height:13px; margin:0 .5rem; top:.05rem;}
+.review .review-txt{font-size:.75rem; line-height:1.05rem; margin:.7rem 0 0;}
+.review ul{margin:.75rem 0 0;}
+.review ul li{width:3.75rem; height:3.75rem; border-radius:.25rem; margin:0 .5rem 0 0;}
+
+.search{border:3px solid #4366d4; border-radius:.175rem; padding:.5rem .75rem; margin:1.25rem 0 0;}
+.search input{width:calc(100% - 1rem); font-size:.75rem; height:1.05rem;}
+.search img{width:1rem;}
+
+.search-word li{font-size:.7rem; color:#999; letter-spacing:-.035rem; padding:.75rem 0;}
+
+
+.num{font-size:.65rem; margin:.75rem 0 0;}
+
+.appointment-detail-visual{border-radius: .25rem; margin:1.5rem 0 0;}
+.appo_tb tr th{font-size:.7rem; letter-spacing:-.035rem; padding:.25rem 0;}
+.appo_tb tr td{font-size:.7rem; letter-spacing:-.035rem;}
+.appo-detail-btn{margin:.75rem 0 1.5rem;}
+.appo-detail-btn a{float:left; width:49%; height:2.25rem; line-height:2.25rem; border-radius:.25rem; font-size:.75rem;}
+.appo-detail-btn a:first-child{margin:0 2% 0 0;}
 
 
 /* INPUT */
@@ -175,6 +263,8 @@ a.btn2:after{width:.275rem; height:.525rem; background:url(../img/ico_btn_arrow.
 .line4{width:calc(100% - 2rem); _padding:0 1rem; margin:1.5rem auto;}
 .line5{margin:1.5rem auto 1rem;}
 .line6{margin:1rem auto 1.5rem;}
+.line7{margin:.5rem auto;}
+.line8{margin:1rem auto 1.125rem;}
 
 .top-contents .top-list li{font-size:.9rem; margin:.5rem 0 0;}
 .top-contents .top-list li a{letter-spacing:-.045rem;}
@@ -341,6 +431,23 @@ align-items: center;
 
 .swiper-slide3 p{font-size:.75rem; margin:.5rem 0 0;}
 
+.fraction .swiper-pagination-fraction{font-size:.7rem; bottom:0;}
+
+
+.fraction .swiper-pagination-fraction{font-size:.7rem;}
+.slide5 .swiper-slide5{width:7.25rem !important; margin:0 .5rem 0 0;}
+.slide5 .swiper-slide5>div>div{border-radius:.25rem;}
+.slide5 .swiper-slide5>div p{font-size:.7rem; letter-spacing:-.035rem; margin:.5rem 0 0;}
+.slide5 .swiper-slide5>div p>span{font-size:.6rem; letter-spacing:-.03rem;}
+.slide5 .swiper-slide5>div p>span span:after{display:inline-block; content:""; width:2px; height:13px; background:#ddd; margin:0 .5rem; position:relative; top:.1rem;}
+
+
+
+
+
+
+
+
 
 @media all and (max-width:375px){
 html{font-size:20px;}
@@ -349,14 +456,33 @@ body{font-size:1rem;}
 
 
 @media all and (max-width:374px){
+select {width:100%; font-size:.7rem; color:#555; border:none; _border-radius: 5px; padding:0 1rem 0 0; background:url(../img/select_arrow.png) no-repeat 100% 50%; letter-spacing:-.04rem;
+-webkit-appearance:none;
+-moz-appearance:none;
+appearance:none;
+}
+    
 .around-tab{margin:1rem 0 0;}
 .around-tab ul{max-width:14rem; padding:0 .64rem;}
-.around-tab ul li{padding:.32rem 0; font-size:.64rem; letter-spacing:-.032rem;}
+.around-tab ul li{width:50%; padding:.32rem 0;}
+.hotel-tab ul li{width:31%;}
+.hotel-tab ul li:nth-child(2){margin:0 3.5%;}
+.hotel-detail-tab{margin:0;}
+.result-tab li:last-child{width:28%;}
 
 .around-info{margin:.8rem 0 0;}
-.around-info div.around-img{width:6rem; border-radius:.2rem; margin:0 .8rem 0 0;}
+.around-info div.around-img{width:6rem; border-radius:.2rem; margin:0 .7rem 0 0;}
 .around-info div.around-txt p{font-size:.64rem; letter-spacing:-.032rem; margin:.2rem 0 0;}
-.around-info div.around-txt span{font-size:.52rem; line-height:.8rem; letter-spacing:-.026rem; margin:.3125rem 0 0;}
+.around-info div.around-txt span{font-size:.52rem; line-height:.8rem; letter-spacing:-.026rem;}
+.around-price>span{font-size:.55rem !important;}
+
+
+.appointment-info .around-txt{width:calc(100% - 6.7rem);}
+.appointment-info .around-txt .status span{width:2rem; height:.8rem; border-radius:.075rem; padding:.25rem;}
+.appointment-info .around-txt .status span:first-child{margin:0 .25rem 0 0;}
+.appointment-info .around-txt .status p{font-size:.55rem; margin:.2rem 0 0;}
+.appointment-info .around-txt>span{font-size:.55rem !important;}
+.appointment-info .around-price-txt{margin:.0rem 0 0 !important;}
 }
 
 

@@ -96,6 +96,34 @@ $(function () {
       slidesPerView: 'auto',
       loop: true,
     });
+    
+    var swiper4 = new Swiper('.swiper-container4', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        loop: true,
+        disableOnInteraction: false,
+      },pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    
+    
+    var swiper5 = new Swiper('.swiper-container5', {
+      slidesPerView: 'auto',
+      loop: true,
+    });
     /* //비주얼 (스와이프) */
     
     
@@ -131,4 +159,26 @@ $(function () {
         $(this).addClass("blue-line").children("span").css('display','block');
     });
     /* //빠른문의(상세) */
+    
+    /* hotel-detail-tab */
+    $(".hotel-detail-tab ul li").click(function(){
+        $(".hotel-detail-tab ul li").removeClass("on");
+        $(this).addClass("on");
+    });
+    $(".hotel-detail-tab ul li").eq(0).click(function(){
+        $(".con-01").css('display','block');
+        $(".con-02").css('display','none');
+        $(".con-03").css('display','none');
+    });
+    $(".hotel-detail-tab ul li").eq(1).click(function(){
+        $(".con-01").css('display','none');
+        $(".con-02").css('display','block');
+        $(".con-03").css('display','none');
+    });
+    $(".hotel-detail-tab ul li").eq(2).click(function(){
+        $(".con-01").css('display','none');
+        $(".con-02").css('display','none');
+        $(".con-03").css('display','block');
+    });
+    /* //hotel-detail-tab */
 });
