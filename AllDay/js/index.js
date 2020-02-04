@@ -53,9 +53,11 @@ $(function () {
         if($("input.confirm").is(":checked") == true) {
 //            alert("aa");
             $(".btn").addClass("on");
+            $(".btn3").addClass("on");
         }else{
 //            alert("bb");
             $(".btn").removeClass("on");
+            $(".btn3").removeClass("on");
         }
     });
     /* //체크박스 */

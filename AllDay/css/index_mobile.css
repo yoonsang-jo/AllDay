@@ -6,6 +6,7 @@ select {width:100%; font-size:.8rem; color:#555; border:none; _border-radius: 5p
 -moz-appearance:none;
 appearance:none;
 }
+.select-border{border:2px solid #ddd; border-radius:.25rem; padding:.5rem 1.5rem .5rem 1rem; font-size:.75rem; margin:.5rem 0 0; background:url(../img/select_arrow.png) no-repeat 95% 50%;}
 
 input[type=tel],
 input[type=time],
@@ -49,6 +50,9 @@ input[type=email][disabled]{font-size:.7rem;}
 
 /* 서브페이지 */
 .sub-wrap{padding:0 1rem;}
+
+.sub-wrap .top-tit{height:2.25rem; line-height:2.25rem; font-size:1rem; letter-spacing: -.05rem;}
+.sub-wrap .posi-back{top:.2rem;}
 
 .sub-wrap .back{width:1rem; padding:.5rem; margin:0 0 0 -.5rem;}
 .sub-wrap .title{margin-top:.625rem; font-size:1.25rem; letter-spacing:-.0625rem;}
@@ -157,12 +161,19 @@ input[type=email][disabled]{font-size:.7rem;}
 .sub-wrap .find-info a{font-size:.75rem;}
 
 .checkbox{margin:1.5rem 0 0;}
-.checkbox2{margin:.75rem 0 0;}
-.checkbox2 input[type="text"]{width:calc(100% - 4rem); float:right; padding:.2rem 0; font-size:.6rem;}
 .checkbox input[type="checkbox"]{width:.75rem; height:.75rem;}
 .checkbox input[type="checkbox"]:before{width:.475rem; height:.325rem;}
 .checkbox input[type="checkbox"]:checked:before{display:block; content:""; width:.475rem; height:.325rem;}
 .checkbox label{padding:0 0 0 .3rem; font-size:.7rem; letter-spacing:-.035rem;}
+.checkbox2{margin:.75rem 0 0;}
+.checkbox2 input[type="text"]{width:calc(100% - 4rem); float:right; padding:.2rem 0; font-size:.6rem;}
+
+.checkbox3{margin:0 0 1rem;}
+.checkbox3 ul li:nth-child(1){width:1.5rem; padding:.15rem 0 0;}
+.checkbox3 ul li:nth-child(1) input{vertical-align:text-top;}
+.checkbox3 ul li:nth-child(2){width:calc(100% - 1.5rem);}
+.checkbox3 ul li label{font-size:.75rem; line-height:1.125rem;}
+.checkbox3 ul li label span{font-size:.8rem;}
 
 .process-box{margin:6.8rem 0 0;}
 .process-box img{width:6.5rem;}
@@ -219,6 +230,55 @@ a.btn2:after{width:.275rem; height:.525rem; background:url(../img/ico_btn_arrow.
 .appo-detail-btn{margin:.75rem 0 1.5rem;}
 .appo-detail-btn a{float:left; width:49%; height:2.25rem; line-height:2.25rem; border-radius:.25rem; font-size:.75rem;}
 .appo-detail-btn a:first-child{margin:0 2% 0 0;}
+
+.reservation-info{border-radius:.175rem;}
+.reservation-info h3{font-size:.8rem; letter-spacing:-.04rem; padding:.75rem 1rem;}
+.reservation-info>div{padding:1rem;}
+.reservation-info>div h4{font-size:.7rem; letter-spacing:-.035rem;}
+.reservation-info>div h4>span{float:right;}
+.reservation-info .check-in-out-time .nights{width:2rem; height:2rem; line-height:2rem; font-size:.7rem;}
+.personnel>ul{margin:.5rem 0 0;}
+.personnel>ul>li{padding:.8rem 1.05rem; border-radius:.25rem;  margin:.25rem 0 0;}
+.personnel>ul>li p{font-size:.75rem;}
+.personnel>ul>li ul li{font-size:.7rem;}
+.personnel>ul>li ul li:first-child,
+.personnel>ul>li ul li:last-child{width:1rem; height:1rem; line-height:1rem;}
+.personnel>ul>li ul li:nth-child(2){height:1rem; line-height:1rem; padding:0 .75rem;}
+.personnel>ul>li ul li.plus:before,
+.personnel>ul>li ul li.minus:before{width:.4rem; height:.05rem;}
+.personnel>ul>li ul li.plus:after{width:.4rem; height:.05rem;}
+
+.hotel-choise{max-width:18rem;}
+.hotel-choise li{font-size:.875rem; letter-spacing:-.0437rem;}
+.hotel-choise li > p{padding:1rem 0 1rem 1rem;}
+.hotel-choise li > span{padding:1.1rem 0 0 0; font-size:.75rem; margin:0 0 0 .75rem;}
+.hotel-choise li > img{width:.6rem; margin:1.35rem 1rem 0;}
+
+.hotel-choise li  .inner{padding:1rem;}
+
+.article-01 div div{width:auto; border-radius:.25rem;}
+.article-01 div div img{width:100%;}
+.article-01 div h3{font-size:1rem; letter-spacing:-.05rem; padding:.75rem 0 .575rem;}
+.article-01 div table{margin:.75rem 0 0;}
+.article-01 div table th{font-size:.7rem; letter-spacing:.035rem;}
+.article-01 div table td{font-size:.7rem; letter-spacing:.035rem;}
+
+.article-02{}
+
+.article-03{}
+
+.article-04 .info-txt{border-radius:.175rem; padding:.75rem; font-size:.75rem; line-height:1.05rem;}
+
+.article-05  p{margin:1.25rem 0 0;}
+.article-05 table{margin:1rem 0 0;}
+.article-05 table th{font-size: .75rem;}
+.article-05 table td{font-size:1.15rem;}
+.article-05 table .tb-pb{padding:0 0 .625rem;}
+.article-05 table .tb-pt{padding:.625rem 0 0;}
+.article-05 table .total{font-size:1.25rem;}
+.article-05 table td span{font-size:.75rem;}
+
+.f-check{max-width:16rem; padding:1.25rem 1rem; background:#eee;}
 
 
 /* INPUT */
@@ -278,6 +338,7 @@ a.btn2:after{width:.275rem; height:.525rem; background:url(../img/ico_btn_arrow.
 .header-inner,
 .main-inner,
 .contents{padding:0 1rem;}
+.contents2{padding:1.25rem 1rem;}
 
 header{height:2.5rem;}
 header h1{width:5rem; margin:.35rem 0 0;}

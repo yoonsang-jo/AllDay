@@ -19,6 +19,10 @@ body{width:100%; height:100%; font-size:1rem;}
 .sub-wrap{max-width:32rem; min-height:100%; padding:0 2rem; margin:0 auto; position: relative;}
 .sub-wrap2{min-height:auto !important;}
 
+
+.sub-wrap .top-tit{height:4.5rem; line-height:4.5rem; text-align: center; font-size:2rem; color:#000; letter-spacing: -.1rem; position:relative;}
+.sub-wrap .posi-back{position:absolute; left:0; top:.4rem;}
+
 .sub-wrap .back{display:inline-block; width:2rem; padding:1rem; margin:0 0 0 -1rem;}
 .sub-wrap .title{margin-top:1.25rem; font-size:2.5rem; letter-spacing:-.125rem; font-weight:normal; color:#000; position:relative;}
 .sub-wrap .title a{font-size:1.4rem; color:#777; position:absolute; right:0; bottom:0; line-height:2.4rem;}
@@ -171,13 +175,21 @@ body{width:100%; height:100%; font-size:1rem;}
 .sub-wrap .find-info a{display:block; color:#777; font-size:1.5rem;}
 
 .checkbox{margin:3rem 0 0;}
-.checkbox2{margin:1.5rem 0 0;}
-.checkbox2 input[type="text"]{width:calc(100% - 7rem); float:right; padding:.4rem 0; font-size:1.2rem;}
 .checkbox input[type="checkbox"]{width:1.5rem; height:1.5rem; background:#fff; border:1px solid #ddd; -webkit-appearance:none; -webkit-border-radius: 0; position:relative;}
 .checkbox input[type="checkbox"]:checked{background:#4366d4; border:1px solid #4366d4;}
 .checkbox input[type="checkbox"]:before{display:block; content:""; width:.95rem; height:.65rem; background:none; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);}
 .checkbox input[type="checkbox"]:checked:before{display:block; content:""; width:.95rem; height:.65rem; background:url(../img/ico.check.png) no-repeat center center / 100% auto; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);}
 .checkbox label{padding:0 0 0 .6rem; font-size:1.4rem; letter-spacing:-.07rem;}
+
+.checkbox2{margin:1.5rem 0 0;}
+.checkbox2 input[type="text"]{width:calc(100% - 7rem); float:right; padding:.4rem 0; font-size:1.2rem;}
+
+.checkbox3{margin:0 0 2rem;}
+.checkbox3 ul li{float:left;}
+.checkbox3 ul li:nth-child(1){width:3rem; padding:.3rem 0 0;}
+.checkbox3 ul li:nth-child(2){width:calc(100% - 3rem);}
+.checkbox3 ul li label{padding:0; display:block; font-size:1.5rem; color:#999; font-family:'NotoSansCJKkr-DemiLight'; line-height:2.25rem;}
+.checkbox3 ul li label span{font-size:1.6rem; color:#333; font-family:'Noto Sans KR';}
 
 .process-box{text-align:center; margin:13.6rem 0 0;}
 .process-box img{width:13rem;}
@@ -187,6 +199,7 @@ a.btn{width:100%; height:5rem; line-height:5rem; text-align:center; background:#
 a.btn.on{background:#4366d4}
 a.btn2{display:block; padding:0 2rem; height:5.5rem; line-height:5.5rem; font-size:1.5rem; color:#4366d4; border:1px solid #4366d4; border-radius:.35rem; box-sizing:border-box; margin:3rem 0; position:relative;}
 a.btn2:after{display:block; content:""; width:.55rem; height:1.05rem; background:url(../img/ico_btn_arrow.png) no-repeat center / 100% auto; position:absolute; right:2rem; top:50%; transform:translateY(-50%);}
+a.btn3{width:100%; height:5rem; line-height:5rem; text-align:center; background:#999; color:#fff;}
 
 .reservation-btn>div{border-radius:.35rem; height:5rem;}
 .reservation-btn>div:first-child{float:left; width:26rem;}
@@ -195,12 +208,14 @@ a.btn2:after{display:block; content:""; width:.55rem; height:1.05rem; background
 .reservation-btn>div img{width:2.5rem;}
 
 .reservation-btn2>div a{display:block; width:100%; height:5rem; line-height:5rem; text-align:center; font-size:2rem; color:#fff; background:#4366d4; letter-spacing:-.1rem; border-radius:.35rem;}
+.reservation-btn3>div a{background:#999;}
+.reservation-btn3>div a.on{background:#4366d4;}
 
 .gray-bar{width:100%; height:2rem; background:#eee; font-size:0;}
 
 .map{width:32rem; margin:1.5rem 0 0; border-radius:.5rem; overflow:hidden;}
 
-.check-in-out-time ul{margin:1.3rem 0 0;}
+.check-in-out-time ul{margin:1.3rem 0 0; position:relative;}
 .check-in-out-time ul li{float:left; width:49%; padding:1.5rem; text-align:center; border:2px solid #ddd; border-radius:.5rem; box-sizing:border-box;}
 .check-in-out-time ul li:first-child{margin:0 2% 0 0;}
 .check-in-out-time ul li p{font-size:1.5rem; color:#555;}
@@ -237,9 +252,68 @@ a.btn2:after{display:block; content:""; width:.55rem; height:1.05rem; background
 .appo-detail-btn a{float:left; width:49%; height:4.5rem; line-height:4.5rem; text-align: center; border:2px solid #ddd; border-radius:.5rem; box-sizing: border-box; font-size:1.5rem; color:#555;}
 .appo-detail-btn a:first-child{margin:0 2% 0 0;}
 
+.reservation-info{background:#fff; border-radius:.35rem;}
+.reservation-info h3{font-size:1.6rem; color:#333; letter-spacing:-.08rem; padding:1.5rem 2rem; border-bottom:1px solid #bbb; font-weight:normal;}
+.reservation-info>div{padding:2rem;}
+.reservation-info>div h4{font-size:1.4rem; color:#555; letter-spacing:-.07rem; font-weight: normal;}
+.reservation-info>div h4>span{float:right;}
+.reservation-info .check-in-out-time ul li{width:47%;}
+.reservation-info .check-in-out-time ul li:first-child{margin:0 6% 0 0;}
+.reservation-info .check-in-out-time .nights{width:3.75rem; height:3.75rem; line-height:3.75rem; text-align:center; font-size:1.4rem; color:#fff; letter-spacing:normal; background:#4366d4; border-radius:100%; padding:0; position:absolute; left: 50%; top:50%; transform: translate(-50%, -50%);}
+.personnel>ul{margin:1rem 0 0;}
+.personnel>ul>li{padding:1.6rem 2.1rem; border:2px solid #ddd; border-radius:.5rem; box-sizing:border-box;  margin:.5rem 0 0;}
+.personnel>ul>li:first-child{margin:0;}
+.personnel>ul>li p{float:left; font-size:1.5rem; color:#555;}
+.personnel>ul>li ul{float:right;}
+.personnel>ul>li ul:after{content:""; clear:both; display:block;}
+.personnel>ul>li ul li{float:left; font-size:1.4rem; position:relative;}
+.personnel>ul>li ul li:first-child,
+.personnel>ul>li ul li:last-child{width:2rem; height:2rem; line-height:2rem; text-align: center; border:1px solid #ddd; background:#eee; font-size:0;}
+.personnel>ul>li ul li:nth-child(2){height:2rem; line-height:2rem; text-align:center; padding:0 1.5rem;}
+.personnel>ul>li ul li.plus:before,
+.personnel>ul>li ul li.minus:before{display:block; content:""; width:.8rem; height:.1rem; background: #999; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);}
+.personnel>ul>li ul li.plus:after{display:block; content:""; width:.8rem; height:.1rem; background: #999; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%) rotate(-90deg);}
+
+.hotel-choise{width:100%; max-width:36rem; margin: auto;}
+.hotel-choise li{font-size:1.75rem; color:#555; letter-spacing:-.0875rem; border-bottom:1px solid #bbb;}
+.hotel-choise li:last-child{border-bottom:none;}
+.hotel-choise li:after{content:""; clear:both; display:block;}
+.hotel-choise li > p{float:left; padding:2rem 0 2rem 2rem;}
+.hotel-choise li > span{float:left; padding:2.2rem 0 0 0; font-size:1.5rem; color:#bbb; margin:0 0 0 1.5rem;}
+.hotel-choise li > img{float:right; width:1.2rem; margin:2.7rem 2rem 0;}
+.hotel-choise li > .reverse{transform:rotate(180deg);}
+
+.hotel-choise li article{border-top:1px solid #bbb;}
+.hotel-choise li  .inner{padding:2rem;}
+
+.article-01 div div{width:32rem; border-radius:.5rem; overflow:hidden;}
+.article-01 div div img{width:100%;}
+.article-01 div h3{font-size:2rem; color:#000; letter-spacing:-.1rem; font-weight:normal; padding:1.5rem 0 1.15rem; border-bottom:1px solid #bbb;}
+.article-01 div table{width:100%; margin:1.5rem 0 0;}
+.article-01 div table th{font-size:1.4rem; color:#555; letter-spacing:.07rem; font-weight:normal;}
+.article-01 div table td{font-size:1.4rem; color:#999; letter-spacing:.07rem; font-family:'NotoSansCJKkr-DemiLight'; text-align:right;}
+
+.article-02 .f_mt{margin:0;}
+
+.article-03 .f_mt{margin:0;}
+
+.article-04 .info-txt{border-radius:.35rem; background: #eee; padding:1.5rem; font-size:1.5rem; color:#777; line-height:2.1rem;}
+
+.article-05  p{margin:2.5rem 0 0;}
+.article-05 table{width:100%; margin:2rem 0 0;}
+.article-05 table th{font-size: 1.5rem; color:#999; font-weight:normal;}
+.article-05 table td{font-size:2.3rem; color:#555; text-align:right;}
+.article-05 table .tb-pb{padding:0 0 1.25rem;}
+.article-05 table .tb-pt{padding:1.25rem 0 0;}
+.article-05 table .line{font-size:0;}
+.article-05 table .total{font-size:2.5rem;}
+.article-05 table td span{font-size:1.5rem; color:#777;}
+
+.f-check{max-width:32rem; margin:0 auto; padding:2.5rem 2rem; background:#eee;}
+
 
 /* INPUT */
-.sub-wrap .input-outer{margin-top:.5rem; position:relative;}
+.input-outer{margin-top:.5rem; position:relative;}
 .input-outer input{height:3rem;}
 /* CLEAR BTN */
 .input-outer .input-clear{width:1.75rem; height:1.75rem; background:#bbb; position:absolute; top:.65rem; right:0; border-radius:100%; font-size:0; display:none;}
@@ -288,6 +362,8 @@ a.btn2:after{display:block; content:""; width:.55rem; height:1.05rem; background
 .top-contents .top-info p{font-size:1.8rem; color:#555; letter-spacing:-.09rem; margin:1rem 0 0;}
 .top-contents .top-info span{display:block; font-size:1.2rem; color:#999; letter-spacing:normal;}
 
+
+
 .line{width:100%; height:2px; background:#ddd; font-size:0; margin:1.5rem auto;}
 .line2{width:100%; height:2px; background:#ddd; font-size:0; margin:2.5rem 0 2rem;}
 .line3{width:100%; height:2px; background:#ddd; font-size:0; margin:2rem auto;}
@@ -313,6 +389,7 @@ a.btn2:after{display:block; content:""; width:.55rem; height:1.05rem; background
 .main-inner,
 .contents{max-width:32rem; min-height:100%; padding:0 2rem; margin:0 auto; position: relative;}
 .contents{min-height:auto;}
+.contents2{background:#eee; padding:2.5rem 2rem; border-top:1px solid #bbb;}
 
 header{height:5rem; background:#eee;}
 header:after{content:""; clear:both; display:block;}
