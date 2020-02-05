@@ -281,6 +281,24 @@ a.btn2:after{width:.275rem; height:.525rem; background:url(../img/ico_btn_arrow.
 .f-check{max-width:16rem; padding:1.25rem 1rem; background:#eee;}
 
 
+.notice-txt{margin:1rem 0 0; padding:0 0 1rem;}
+.notice-txt p a{font-size:.8rem; letter-spacing:-.04rem; line-height:.95rem;}
+.notice-txt p span{font-size:1rem; margin:0 .75rem 0 0;}
+.notice-txt>span{font-size:.7rem; margin:.5rem 0 0;}
+
+.notice-detail-txt{margin:1rem 0 0;}
+.notice-img{width:auto; border-radius:.25rem;}
+
+.notice-detail-txt span{font-size:.75rem; line-height:1rem; margin:1rem 0 0;}
+
+.question-tab{max-width:auto; padding:0 1rem;}
+.question-tab ul li{font-size:.8rem; letter-spacing:-.04rem; padding:.625rem .7rem;}
+
+.question-txt>span{letter-spacing:-.035rem;}
+.question-txt p{margin:.5rem 0 0;}
+.question-txt p span{font-size:1rem; margin:0 .75rem 0 0;}
+
+
 /* INPUT */
 .sub-wrap .input-outer{margin-top:.25rem;}
 .input-outer input{height:1.5rem;}
@@ -338,7 +356,7 @@ a.btn2:after{width:.275rem; height:.525rem; background:url(../img/ico_btn_arrow.
 .header-inner,
 .main-inner,
 .contents{padding:0 1rem;}
-.contents2{padding:1.25rem 1rem;}
+.contents2{padding:1rem;}
 
 header{height:2.5rem;}
 header h1{width:5rem; margin:.35rem 0 0;}
