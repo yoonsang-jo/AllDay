@@ -455,7 +455,7 @@ align-items: center;
 }
 
 .swiper-slide>div{margin:.75rem 0 0;}
-.swiper-slide div div:first-child{width:4.25rem; margin:0 1rem 0 0;}
+.swiper-slide div div:first-child{width:4.25rem; height:4.25rem; border-radius:.25rem; margin:0 1rem 0 0;}
 .swiper-slide div div:last-child p{font-size:.75rem; margin:.25rem 0 0; letter-spacing:-.0375rem;}
 .swiper-slide div div:last-child span{font-size:.675rem; margin:.15rem 0 0;}
 .swiper-slide div div:last-child a{font-size:.625rem; margin:.5rem 0 0; letter-spacing:-.0312rem;}

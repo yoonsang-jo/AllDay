@@ -126,6 +126,11 @@ $(function () {
       slidesPerView: 'auto',
       loop: true,
     });
+    
+    
+    var swiper6 = new Swiper('.swiper-container6', {
+      slidesPerView: 'auto',
+    });
     /* //비주얼 (스와이프) */
     
     
