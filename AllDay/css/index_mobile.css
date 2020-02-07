@@ -139,7 +139,8 @@ input[type=email][disabled]{font-size:.7rem;}
 .pick span{padding:0 .25rem;}
 
 .around-info{margin:1rem 0 0;}
-.around-info div.around-img{width:7.5rem; border-radius:.25rem; margin:0 .8rem 0 0;}
+.around-info div.around-img{width:7.5rem; height:7.5rem; border-radius:.25rem; margin:0 .8rem 0 0;}
+.around-info div.around-txt{width:calc(100% - 8.3rem);}
 .around-info div.around-txt p{font-size:.8rem; letter-spacing:-.04rem; margin:.5rem 0 0;}
 .around-info div.around-txt span{font-size:.65rem; line-height:1rem; letter-spacing:-.0325;}
 
@@ -224,7 +225,7 @@ a.btn2:after{width:.275rem; height:.525rem; background:url(../img/ico_btn_arrow.
 
 .num{font-size:.65rem; margin:.75rem 0 0;}
 
-.appointment-detail-visual{border-radius: .25rem; margin:1.5rem 0 0;}
+.appointment-detail-visual{width:auto; height:8rem; border-radius: .25rem; margin:1.5rem 0 0;}
 .appo_tb tr th{font-size:.7rem; letter-spacing:-.035rem; padding:.25rem 0;}
 .appo_tb tr td{font-size:.7rem; letter-spacing:-.035rem;}
 .appo-detail-btn{margin:.75rem 0 1.5rem;}
@@ -256,7 +257,7 @@ a.btn2:after{width:.275rem; height:.525rem; background:url(../img/ico_btn_arrow.
 
 .hotel-choise li  .inner{padding:1rem;}
 
-.article-01 div div{width:auto; border-radius:.25rem;}
+.article-01 div div{width:auto; height:4.85rem; border-radius:.25rem;}
 .article-01 div div img{width:100%;}
 .article-01 div h3{font-size:1rem; letter-spacing:-.05rem; padding:.75rem 0 .575rem;}
 .article-01 div table{margin:.75rem 0 0;}
@@ -282,17 +283,17 @@ a.btn2:after{width:.275rem; height:.525rem; background:url(../img/ico_btn_arrow.
 
 
 .notice-txt{margin:1rem 0 0; padding:0 0 1rem;}
-.notice-txt p a{font-size:.8rem; letter-spacing:-.04rem; line-height:.95rem;}
+.notice-txt p a{font-size:.7rem; letter-spacing:-.04rem; line-height:.95rem;}
 .notice-txt p span{font-size:1rem; margin:0 .75rem 0 0;}
 .notice-txt>span{font-size:.7rem; margin:.5rem 0 0;}
 
 .notice-detail-txt{margin:1rem 0 0;}
-.notice-img{width:auto; border-radius:.25rem;}
+.notice-img{width:auto; height:11.25rem; border-radius:.25rem;}
 
 .notice-detail-txt span{font-size:.75rem; line-height:1rem; margin:1rem 0 0;}
 
 .question-tab{max-width:auto; padding:0 1rem;}
-.question-tab ul li{font-size:.8rem; letter-spacing:-.04rem; padding:.625rem .7rem;}
+.question-tab ul li{font-size:.7rem; letter-spacing:-.04rem; padding:.625rem .7rem;}
 
 .question-txt>span{letter-spacing:-.035rem;}
 .question-txt p{margin:.5rem 0 0;}
@@ -398,9 +399,9 @@ box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1);
 .contents h2 a{font-size:.7rem; line-height:.9rem;}
 .contents .article-txt{font-size:.7rem; margin:.7rem 0 0;}
 
-.contents .tip-img{ margin:.5rem 0 0;}
+.contents .tip-img{width:16rem; height:6.25rem; margin:.5rem 0 0;}
 
-.contents .hotel-img{margin:1.125rem 0 0; border-radius:.25rem;}
+.contents .hotel-img{width:auto; height:7.5rem; margin:1.125rem 0 0; border-radius:.25rem;}
 .price-txt{margin:.75rem 0 0;}
 .price-left{width:60%; font-size:.8rem; letter-spacing:-.04rem;}
 .price-left p{font-size:.7rem; letter-spacing:-.035rem; margin:.25rem 0 0;}
@@ -550,7 +551,7 @@ appearance:none;
 .result-tab li:last-child{width:28%;}
 
 .around-info{margin:.8rem 0 0;}
-.around-info div.around-img{width:6rem; border-radius:.2rem; margin:0 .7rem 0 0;}
+.around-info div.around-img{width:6rem; height:6rem; border-radius:.2rem; margin:0 .7rem 0 0;}
 .around-info div.around-txt p{font-size:.64rem; letter-spacing:-.032rem; margin:.2rem 0 0;}
 .around-info div.around-txt span{font-size:.52rem; line-height:.8rem; letter-spacing:-.026rem;}
 .around-price>span{font-size:.55rem !important;}
