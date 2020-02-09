@@ -67,14 +67,13 @@ $(function () {
     var swiper1 = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 30,
-      loop: true,
+      //loop: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
       autoplay: {
         delay: 3000,
-        loop: true,
         disableOnInteraction: false,
       },
       pagination: {
@@ -90,26 +89,26 @@ $(function () {
     
     var swiper2 = new Swiper('.swiper-container2', {
       slidesPerView: 'auto',
-      loop: true,
+      //loop: true,
     });
     
     
     var swiper3 = new Swiper('.swiper-container3', {
       slidesPerView: 'auto',
-      loop: true,
+      //loop: true,
     });
     
     var swiper4 = new Swiper('.swiper-container4', {
       slidesPerView: 1,
       spaceBetween: 30,
-      loop: true,
+      //loop: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
       autoplay: {
         delay: 3000,
-        loop: true,
+        //loop: true,
         disableOnInteraction: false,
       },pagination: {
         el: '.swiper-pagination',
@@ -124,7 +123,7 @@ $(function () {
     
     var swiper5 = new Swiper('.swiper-container5', {
       slidesPerView: 'auto',
-      loop: true,
+      //loop: true,
     });
     
     
@@ -168,24 +167,32 @@ $(function () {
     /* //빠른문의(상세) */
     
     /* hotel-detail-tab */
+    var conHeight01 = $(".con-01").outerHeight();
+        $(".con-box").css('height', conHeight01);
+    var conHeight02 = 0;
+    var conHeight03 = 0;
+    
     $(".hotel-detail-tab ul li").click(function(){
         $(".hotel-detail-tab ul li").removeClass("on");
         $(this).addClass("on");
     });
     $(".hotel-detail-tab ul li").eq(0).click(function(){
-        $(".con-01").css('display','block');
-        $(".con-02").css('display','none');
-        $(".con-03").css('display','none');
+        conHeight01 = $(".con-01").outerHeight()
+        $(".con-box").css('height', conHeight01);
+        $(".con-box>div").removeClass("on");
+        $(".con-01").addClass("on");
     });
     $(".hotel-detail-tab ul li").eq(1).click(function(){
-        $(".con-01").css('display','none');
-        $(".con-02").css('display','block');
-        $(".con-03").css('display','none');
+        conHeight02 = $(".con-02").outerHeight()
+        $(".con-box").css('height', conHeight02);
+        $(".con-box>div").removeClass("on");
+        $(".con-02").addClass("on");
     });
     $(".hotel-detail-tab ul li").eq(2).click(function(){
-        $(".con-01").css('display','none');
-        $(".con-02").css('display','none');
-        $(".con-03").css('display','block');
+        conHeight03 = $(".con-03").outerHeight()
+        $(".con-box").css('height', conHeight03);
+        $(".con-box>div").removeClass("on");
+        $(".con-03").addClass("on");
     });
     /* //hotel-detail-tab */
 });
