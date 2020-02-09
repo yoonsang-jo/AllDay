@@ -168,7 +168,7 @@ body{width:100%; height:100%; font-size:1rem;}
 .attachment li img{width:100%;}
 
 .con-box{width:100%; position:relative; overflow:hidden;}
-.con-box>div{position:absolute; background:#fff; left:50%; transform:translateX(-50%); z-index:1; opacity:0;}
+.con-box>div{position:absolute; background:#fff; left:50%; transform:translateX(-50%); z-index:1; opacity:0; width:100%;}
 .con-box>div.on{z-index:2; opacity:1;}
 .con-03{width:100%;}
 
