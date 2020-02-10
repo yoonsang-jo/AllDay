@@ -403,6 +403,11 @@ box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1);
 .visual3 .swiper-container ul li:nth-child(2){font-size:.75rem;}
 .visual3 .swiper-container ul li:nth-child(3),
 .visual3 .swiper-container ul li:nth-child(4){font-size:.675rem; margin:.5rem 0 0; letter-spacing:-.0337rem;}
+.visual3 .swiper-container ul li:nth-child(3) select{font-size:.675rem; letter-spacing:-.0337rem;}
+.visual3 .swiper-container ul li:nth-child(4) input{font-size:.675rem;}
+.visual3 .swiper-container ul li:nth-child(4) input::-webkit-input-placeholder{font-size:.675rem;}
+.visual3 .swiper-container ul li:nth-child(4) input:first-child{width:3.5rem; margin:0 .125rem 0 0;}
+.visual3 .swiper-container ul li:nth-child(4) input:last-child{width:2rem; margin:0 0 0 .25rem;}
 .visual3 .swiper-container>a{font-size:.75rem; padding:.75rem 0; margin:.75rem 0 0; border-radius:.25rem;}
 
 .contents h2{margin:1.0625rem 0 0;}
@@ -557,6 +562,8 @@ select {width:100%; font-size:.7rem; color:#555; border:none; _border-radius: 5p
 -moz-appearance:none;
 appearance:none;
 }
+    
+.visual3 .swiper-container ul li:nth-child(4) input:first-child{width:3rem;}
     
 .around-tab{margin:1rem 0 0;}
 .around-tab ul{max-width:14rem; padding:0 .64rem;}

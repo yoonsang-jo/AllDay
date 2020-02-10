@@ -177,22 +177,30 @@ $(function () {
         $(this).addClass("on");
     });
     $(".hotel-detail-tab ul li").eq(0).click(function(){
-        conHeight01 = $(".con-01").outerHeight()
+        conHeight01 = $(".con-01").outerHeight();
         $(".con-box").css('height', conHeight01);
         $(".con-box>div").removeClass("on");
         $(".con-01").addClass("on");
     });
     $(".hotel-detail-tab ul li").eq(1).click(function(){
-        conHeight02 = $(".con-02").outerHeight()
+        conHeight02 = $(".con-02").outerHeight();
         $(".con-box").css('height', conHeight02);
         $(".con-box>div").removeClass("on");
         $(".con-02").addClass("on");
     });
     $(".hotel-detail-tab ul li").eq(2).click(function(){
-        conHeight03 = $(".con-03").outerHeight()
+        conHeight03 = $(".con-03").outerHeight();
         $(".con-box").css('height', conHeight03);
         $(".con-box>div").removeClass("on");
         $(".con-03").addClass("on");
     });
     /* //hotel-detail-tab */
+    
+    
+    $("#datepicker").datepicker({
+        dateFormat: 'yy.mm.dd', //날짜 표시 형식 설정
+    });
+    $("#datepicker2").datepicker({
+        dateFormat: 'mm.dd', //날짜 표시 형식 설정
+    });
 });

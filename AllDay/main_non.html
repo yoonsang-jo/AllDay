@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/index_mobile.css" media="all and (max-width:767px)">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
     <div class="black_bg">백그라운드</div>
@@ -74,8 +76,15 @@
                         <ul class="clear">
                             <li class="blue">지역</li>
                             <li class="blue">투숙예정일</li>
-                            <li>서울 전체</li>
-                            <li class="ls-zero">2019.09.01 ~ 09.17</li>
+                            <li>
+                                <select style="width:75%;">
+                                    <option>서울전체</option>
+                                </select>
+                            </li>
+                            <li class="ls-zero">
+                                <!--2019.09.01 ~ 09.17-->
+                                <input type="text" id="datepicker" readonly="readonly" placeholder="2020.01.01"><span>~</span><input type="text" id="datepicker2" readonly="readonly" placeholder="01.01">
+                            </li>
                         </ul>
                         <a href="#a" class="blue">내 맘에 쏙 드는 호텔 찾기</a>
                     </div>
