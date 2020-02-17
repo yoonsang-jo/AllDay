@@ -154,6 +154,14 @@ input[type=email][disabled]{font-size:.7rem;}
 .around-info div.around-txt p{font-size:.8rem; letter-spacing:-.04rem; margin:.5rem 0 0;}
 .around-info div.around-txt span{font-size:.65rem; line-height:1rem; letter-spacing:-.0325;}
 
+.around-info2{padding:.9rem; border-radius:.175rem;}
+.around-info2 div.around-img{width:5rem; height:5rem; }
+.around-info2 div.around-txt{width:calc(100% - 6rem); height:5rem;}
+.around-btn{height:1.9rem; line-height:1.9rem; border-radius:.175rem; font-size:.65rem; margin:1rem 0 0;}
+
+.around-info3{padding:0; margin:0;}
+.around-info3 .personnel{margin:.5rem 0 0;}
+
 .appointment-info .around-txt{width:calc(100% - 8.5rem);}
 .appointment-info .around-txt .status span{width:2.65rem; height:1rem; border-radius:.075rem; padding:.25rem;}
 .appointment-info .around-txt .status span:first-child{margin:0 .25rem 0 0;}
@@ -269,7 +277,7 @@ a.btn2:after{width:.275rem; height:.525rem; background:url(../img/ico_btn_arrow.
 .hotel-choise li{font-size:.875rem; letter-spacing:-.0437rem;}
 .hotel-choise li > p{padding:1rem 0 1rem 1rem;}
 .hotel-choise li > span{padding:1.1rem 0 0 0; font-size:.75rem; margin:0 0 0 .75rem;}
-.hotel-choise li > img{width:.6rem; margin:1.35rem 1rem 0;}
+.hotel-choise li > img{width:1.2rem; margin:1.2rem 1rem 0;}
 
 .hotel-choise li  .inner{padding:1rem;}
 
@@ -285,6 +293,8 @@ a.btn2:after{width:.275rem; height:.525rem; background:url(../img/ico_btn_arrow.
 .article-03{}
 
 .article-04 .info-txt{border-radius:.175rem; padding:.75rem; font-size:.75rem; line-height:1.05rem;}
+.article-04 p{margin:.75rem 0 0;}
+.article-04 p span{font-size:.6rem; line-height:.9rem; letter-spacing:-.05rem;}
 
 .article-05  p{margin:1.25rem 0 0;}
 .article-05 table{margin:1rem 0 0;}
@@ -594,6 +604,16 @@ appearance:none;
 .appointment-info .around-txt .status p{font-size:.55rem; margin:.2rem 0 0;}
 .appointment-info .around-txt>span{font-size:.55rem !important;}
 .appointment-info .around-price-txt{margin:.0rem 0 0 !important;}
+
+.around-info2{padding:.9rem; border-radius:.175rem;}
+.around-info2 div.around-img{width:5rem; height:5rem; }
+.around-info2 div.around-txt{width:calc(100% - 6rem); height:5rem;}
+.around-btn{height:1.9rem; line-height:1.9rem; border-radius:.175rem; font-size:.65rem; margin:1rem 0 0;}
+
+.around-info3{padding:0; margin:0;}
+
+
+.article-04 p span{font-size:.55rem;}
 
 .height-450{height:9rem !important;}
 }
