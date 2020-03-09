@@ -325,6 +325,23 @@ a.btn2:after{width:.275rem; height:.525rem; background:url(../img/ico_btn_arrow.
 .question-txt p{margin:.5rem 0 0;}
 .question-txt p span{font-size:1rem; margin:0 .75rem 0 0;}
 
+.setting-tb{margin:2rem 0 0;}
+.setting-tb:nth-of-type(1){margin:1.75rem 0 0;}
+.setting-tb th{font-size:.8rem; letter-spacing:-.04rem; padding-bottom:.625rem;}
+.setting-tb td{padding:.5rem 0;}
+.setting-tb .switch-box{padding-right:.5rem;}
+.setting-tb td a{font-size:.7rem;}
+.setting-tb th:nth-child(2),
+.setting-tb td:nth-child(2){font-size:.7rem;}
+
+/* SWITCH */
+.switch{width:1.5rem; height:.75rem;}
+.slider:before{height:1rem; width:1rem;}
+
+/* Rounded sliders */
+.slider.round {border-radius:.75rem;}
+/* //SWITCH */
+
 
 /* INPUT */
 .sub-wrap .input-outer{margin-top:.25rem;}
